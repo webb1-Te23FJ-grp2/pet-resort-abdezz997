@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.father{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "item2 item1";
+    width: 1200px;
+
+}
+.menu{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  grid-area: item1;
+  justify-content: end;
+   
+}
+
+.menuitem{
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    align-content: center;
+}
+
+
+
+.heading{
+    grid-area: item2;
+}
+
+#logo{
+    display: flex;
+}
+
+.PetResort{
+    display: grid;
+    background-color: #eee;
+    width: 1200px;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+}
+
+#happydog{
+    display: flex;
+    background-image: url(../img/happiest-dog.webp);
+    height: 600px;
+    border-radius: 10px;
+    color: white;
+    align-items:end;
+    grid-area: happydog;
+}
+
+#groomin{
+    grid-area: groomin;
+}
+
+#wear{
+grid-area: wear;
+}
+
+#fourdogs{
+    grid-area: four;
+}
+
+#finedining{
+    grid-area: fine;
+}
+
+#partners{
+    grid-area: part;
+}
