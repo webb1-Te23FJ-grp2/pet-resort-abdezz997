@@ -2,83 +2,81 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: #eee;
-    display: flex;
+body {
+    background: #eee;
+    display: flex; 
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.father{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "item2 item1";
+#container {
     width: 1200px;
-
-}
-.menu{
-    list-style:none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  grid-area: item1;
-  justify-content: end;
-   
-}
-
-.menuitem{
-    display: block;
-    margin: 5px;
-    padding: 10px;
-    text-decoration: none;
-    align-content: center;
-}
-
-
-
-.heading{
-    grid-area: item2;
-}
-
-#logo{
-    display: flex;
-}
-
-.PetResort{
     display: grid;
-    background-color: #eee;
-    width: 1200px;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
- 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 600px 300px 400px;
+    gap: 20px;
 }
-
-#happydog{
+div {
+    border-radius: 15px;
+    padding: 10px;
+}
+#header {
+    grid-column: 1/5;
+    display:grid;
+    grid-template-columns: 100px 200px 1fr min-content;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+#header img {
+    width: 100%
+}
+#header ul {
+    grid-column: 4/5;
+    list-style: none;
+    padding: 0;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#header a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#main {
+    background-image: url("img/happiest-dog.webp");
+    background-size: cover;
+    background-position-y: bottom;
+    grid-column: 1/5;
     display: flex;
-    background-image: url(../img/happiest-dog.webp);
-    height: 600px;
-    border-radius: 10px;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px
+}
+#main h1 {
+    font-size: 50px;
+    color:white
+}
+#main h4 {
+    font-size: 20px;
     color: white;
-    align-items:end;
-    grid-area: happydog;
 }
-
-#groomin{
-    grid-area: groomin;
+#grooming {
+    background-color: white;
+    grid-column: 1/4;
 }
-
-#wear{
-grid-area: wear;
+#grooming img {
+    padding:10px;
+    height: 100%;
 }
-
-#fourdogs{
-    grid-area: four;
+#partners {
+    background-color: white;
+    grid-column: 4/5;
+    grid-row: 3/5;
 }
-
-#finedining{
-    grid-area: fine;
-}
-
-#partners{
-    grid-area: part;
+.card {
+    background-color: white;
 }
