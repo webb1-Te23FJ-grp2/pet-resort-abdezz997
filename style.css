@@ -67,16 +67,39 @@ div {
 #grooming {
     background-color: white;
     grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 #grooming img {
-    padding:10px;
-    height: 100%;
+border-radius: 15px;
+width: 100%
 }
 #partners {
     background-color: white;
     grid-column: 4/5;
     grid-row: 3/5;
 }
+#partners img {
+    display: flex;
+    margin: auto;
+    height: 70px;
+}
 .card {
     background-color: white;
+}
+#merch img {
+    border-radius: 10px;
+    width: 100%;
+    gap: 5px;
+    height: 200px;
+}
+#buddy img {
+    border-radius: 10px;
+    width: 100%;
+    gap: 5px;
+}
+#dinning img {
+    border-radius: 10px;
+    width: 100%;
+    gap: 5px;
 }
